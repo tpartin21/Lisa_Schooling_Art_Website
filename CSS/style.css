@@ -162,8 +162,7 @@ section {
   box-shadow: none;
 }  */
 
-header,
-footer {
+header {
   background-color: #b9d9db;
   background-image: url(../HTML/images/lotus_bridge_c2.jpg);
   padding: 20px;
@@ -216,12 +215,26 @@ aside {
   background: lavender;
   padding: 20px;
 }
+.google-slides-container{
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  overflow: hidden;
+}
+
+.google-slides-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
 
 /* Tablet View */
 @media (max-width: 768px){
-    
+  
   
   }
   
@@ -230,7 +243,8 @@ aside {
   /* Mobile View */
   @media (max-width: 400px){
       
-   
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
   
   
   

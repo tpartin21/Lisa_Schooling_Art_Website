@@ -13,10 +13,10 @@
 
 <body>
     <img src="images/icon-burger-menu.svg" alt="Mobile Menu Icon" style="width: 40px;" class="burgermenu">
-    <nav class="mobile-nav" style="display: block;">
+    <nav class="mobile-nav" style="display: none;">
         <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
     </nav>
     
     <div class="mob.nav"></div>
@@ -27,24 +27,24 @@
             <img src="images/lisa_schooling_chinese_characters.png" alt="Logo for Lisa Schooling Website">
         </header>
 
-        <main>
+        <main id="about">
             <h2>ABOUT</h2>
             <img src="images/lisa_schooling_profile_pic.png" alt="Profile Picture">
             <p>"From an early age, I enjoyed exploring the outdoors while growing up in rural Ohio and Indiana.  Those early memories still impact my painting adventures today.  During her undergraduate and graduate years, I often worked on site producing architectural and landscape paintings.  I continue to work in this way by using observation of light and color grounded in composition. Many of the selected views or compositions are plein air technique and then reworked in the studio. Drawing, photography and printmaking are other methods used to support her visual ideas."
             </p>
         </main>
-        <section class="email">
+        <section class="email" id="contact">
             <a href="mailto:knnschool@gmail.com?Subject=Interested_In_Art">CONTACT</a>
         </section>
-        <section class="powerpoint">
+        <div class="google-slides-container">
             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTaklyG6QOmYVxl83Zp2fmtF9KwNN6m26q7GGIaDQcQ-USqWIsoPq2Co2Vuj357dw/embed?start=true&loop=true&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-        </section>
+        </div>
        <footer>
         <p>Lisa Schooling, Co. - Copyright 2021©</p>
        </footer>  
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="jquery-nav.js"></script>
+    <script src="../JS/jquery-nav.js"></script>
 </body>
 
 </html>
