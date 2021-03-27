@@ -144,6 +144,8 @@ a {
   color: grey;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
+  width: 5%;
+  height: auto;
 }
 
 .search {
@@ -190,33 +192,13 @@ aside {
   height: 100%;
 }
 
-/*Desktop*/
-@media (max-width: 1920px){
 
+  
+  
+  
+
+@media (min-width: 992px) {
 
 }
-
-
-/* Tablet View */
-@media (max-width: 768px){
-  
-  
-  }
-  
-  
-  
-  /* Mobile View */
-  @media (max-width: 400px){
-      
-    #leftsidebar {width: 200px; float: left;}
-    #main {margin-left: 216px;}
-
-  
-    #logo {
-      width: 10%;
-    }
-  
-  
-  }
   
   
