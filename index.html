@@ -23,10 +23,9 @@
         <input class= "search" type="text" placeholder="Search..">
     
     <!--Home Page-->
-    <div class="container">
+    <div>
         <header>
             <h1>Lisa Schooling</h1>
-            <img src="../Project/images/lisa_schooling_chinese_characters.png" alt="Logo for Lisa Schooling Website" id="Logo">
         </header>
     <!--About Page-->
         <main id="about">
@@ -38,6 +37,27 @@
     <!--Contact-->
         <section class="email" id="contact">
             <a href="mailto:knnschool@gmail.com?Subject=Interested_In_Art">CONTACT</a>
+            <h1>Click here to Fill Out Order Form</h1>
+            <form onsubmit="return false"></form>
+                <input type="text" placeholder="Enter your last name" id="lastName"/> 
+                <br><br>
+                <input type= "text" placeholder="Enter your first name" id="firstName"/>
+                <br><br>
+                <input type="email" placeholder="Enter your email" id="email"/>
+                <br><br>
+                <input type="text" placeholder="Address (If wanting art shipped)" id="Address"/>
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="House number" id="houseNumber" />
+                <option disabled selected value> -- select a country -- </option>
+                <input type="checkbox" id="newsletter"/> Send me a monthly newsletter
+                <br><br>
+                <span>What art piece would you like? (Additional Questions)</span>
+                <br>
+                <textarea id="question" rows="4"></textarea></textarea>
+                <br><br>
+                <button onclick="Send();">Send</button>
+
+
         </section>
     <!--Painting display-->
         <div class="google-slides-container">

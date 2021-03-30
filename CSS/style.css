@@ -1,37 +1,30 @@
-/* html {
-  height: 100%;
+@media (min-width: 600px) and (max-width:1080) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 200px;
+    grid-template-rows: 100px 400px 100px;
+    gap: 20px;
+    padding: 0 20px;
+   
+  }
+  
+
+}
+
+@media all and (min-width: 600px) and (max-width: 1080px)
+{ img { width: 100%;}
   
 }
 
-
-body {
-  background-color: #b9d9db;
-  background-image: url(../HTML/images/lotus_bridge_c2.jpg);
+header {
+  background-image: url(../images/lisa_schooling_chinese_characters.png);
+  height: 100%;
+  padding: 20px;
   background-size: cover;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-h1 {
-  font-size: 60px;
-  color: gray;
-  font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
-  left: 1px;
-  width: 100px;
-  height: 120px;
-}
-
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1024px;
-}
-
-header {
-  height: 118px;
+  grid-column: 1 / -1;
   text-align: left;
   background-color: rgba(0, 0.338, 0, 0);
   position: absolute;
@@ -39,99 +32,6 @@ header {
   width: 100px;
   height: 120px;
   margin-left: 20px;
-}
-
-nav {
-  font-size: x-large; 
-  text-align: right;
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
-main {
-  height: 400px;
-  text-align: center;
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-footer {
-  background-color: rgba(0, 0, 0, 0.728);
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-h2 {
-
-   font-size: 30;
-   color: rgb(198, 198, 198);
-   font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-  display: flex;
-  font-size: 18px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.powerpoint {
-  display: flex;
-  padding: 200px;
-  min-height: 600px;
-  margin-bottom: 20px;
-  gap: 10px;
-}
-
-
-
-nav a {
-  text-decoration: none;
-  font-size: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-footer p {
-  font-size: 10px;
-  text-align: center;
-  color: rgb(198, 198, 198);
-}
-
-section {
-  padding-top: 10px;
-  height: 20%;
-  width: 20%;
-} */
- */
-
-
- body {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 200px;
-  grid-template-rows: 100px 400px 100px;
-  gap: 20px;
-}
-
-
-
-
-header {
-  background-color: #b9d9db;
-  background-image: url(../images/lotus_bridge_c2.jpg);
-  padding: 20px;
-  background-size: cover;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-header {
-  grid-column: 1 / -1;
-}
-
-header span {
-  background: green;
 }
 
 nav {
@@ -147,35 +47,58 @@ a {
   width: 5%;
   height: auto;
 }
+nav a {
+  text-decoration: none;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-.search {
+
+h1 {
+  font-size: 60px;
+  color:white;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-footer {
-  grid-column: 1 / -1;
-}
+
+
 
 main {
   background:grey;
-  padding: 20px;
+  padding: 0%;
   color: white;
-    grid-area: main;
+  grid-area: main;
   grid-column-start: 1;
   grid-column-end: 4;
   text-align: center;
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
-}
-.email {
-
-  text-align: center;
+  height: 400px;
 }
 
-aside {
-  background: lavender;
-  padding: 20px;
+h2 {
+
+  font-size: 30;
+  color: rgb(198, 198, 198);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+section {
+  padding-top: 10px;
+  height: 20%;
+  width: 20%;
+} 
+
+p {
+  padding-bottom: 0%;
+  font-size: 18px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .google-slides-container{
   position: relative;
@@ -193,12 +116,23 @@ aside {
 }
 
 
-  
-  
-  
-
-@media (min-width: 992px) {
-
+.powerpoint {
+  display: flex;
+  padding: 200px;
+  min-height: 600px;
+  margin-bottom: 20px;
+  gap: 10px;
 }
-  
-  
+
+footer {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.728);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer p {
+  font-size: 10px;
+  text-align: center;
+  color: rgb(198, 198, 198);
+}
