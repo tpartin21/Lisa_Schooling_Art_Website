@@ -22,6 +22,9 @@ function clickHandler(e) {
   });
 }
 
+if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
+        document.getElementById('metaViewport').setAttribute('content', 'width='+screen.width+', initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+var fields = {} 
 document.addEventListener("DOMContentLoaded", function() {
   fields.firstName = document.getElementById('firstName');
   fields.lastName = document.getElementById('lastName');
@@ -72,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function() {
   valid &= fieldValidation(fields.email, isEmail);
   valid &= fieldValidation(fields.houseNumber, isNumber);
   valid &= fieldValidation(fields.question, isNotEmpty);
-  valid &= arePasswordsEqual();
  
   return valid;
  }
