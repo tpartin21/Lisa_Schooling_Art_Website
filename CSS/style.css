@@ -1,7 +1,7 @@
-/* laptop display media query */
-@media (min-width: 768px) and (max-width:1024) {
+/*laptop display media query*/
+@media (min-width: 768px) and (max-width:1024px) {
   body {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 2fr 2fr 2fr 400px;
     grid-template-rows: 200px 800px 200px;
     column-gap: 20px;
@@ -25,10 +25,10 @@
 
 }
 /* mobile phone display media query */ 
-@media (min-width: 320px) and (max-width: 480) {
+@media (min-width: 320px) and (max-width: 480px) {
 
   body {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr 1fr 200px;
     grid-template-rows: 100px 400px 100px;
     column-gap: 20px;
@@ -39,7 +39,7 @@
     display: flex
   }
   header {
-    display: grid;
+    /* display: grid; */
     padding: grid; 
     text-align: center;
     font-size: small;
@@ -59,14 +59,9 @@
 
   }
 }
-/* all devices image change */ 
-@media all and (min-width: 600px) and (max-width: 1080px)
-{ img { width: 100%;
-height: 100%}
-  
-}
+
 .wrapper {
-  display: grid;
+  /* display: grid; */
   gap: 20px;
   grid-template-areas:
     "header"
@@ -78,19 +73,14 @@ height: 100%}
 }
 /* top of page */ 
 header {
-  background-image: url(../images/lisa_schooling_chinese_characters.png);
+  background-image: url(../images/lotus_bridge_c2.jpg);
   height: 100%;
-  padding: 60px;
+  padding: 60px 0px;
   background-size: contain; 
   background-repeat: no-repeat;
   background-position: left;
   grid-column: 1 / -1;
   background-color: rgba(0, 0.338, 0, 0);
-  position: absolute;
-  left: -10px;
-  width: 100px;
-  height: 120px;
-  margin-left: 20px;
 }
 
 .main-head {
@@ -104,6 +94,20 @@ nav {
   padding-top: 14px;
   padding-bottom: 14px;
 }
+.mobile-nav{
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+}
+.nav-containor {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
 
 /*navigation words*/
 
@@ -112,9 +116,6 @@ a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-decoration: none;
-  padding-right: 10px;
-  padding-left: 10px;
-  width: 5%;
   height: auto;
 }
 
@@ -130,14 +131,9 @@ h1 {
 main {
   background: grey;
   padding: 0%;
-  grid-area: main;
-  grid-column-start: 1;
-  grid-column-end: 4;
   text-align: center;
   padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-  height: 400px;
+  height: 700px;
 }
 .content {
   grid-area: content;
