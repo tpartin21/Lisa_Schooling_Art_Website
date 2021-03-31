@@ -1,3 +1,4 @@
+/* burger menu up and down */
 $(document).ready(function(){
     $('.burgermenu').on('click', function(){
         console.log("clicked");
@@ -5,6 +6,7 @@ $(document).ready(function(){
     })
 });
 
+/* smooth scroll */
 const links = document.querySelectorAll(".mobile-nav a");
  
 for (const link of links) {
@@ -21,6 +23,8 @@ function clickHandler(e) {
     behavior: "smooth"
   });
 }
+
+/*contact form */
 
 if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
         document.getElementById('metaViewport').setAttribute('content', 'width='+screen.width+', initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
