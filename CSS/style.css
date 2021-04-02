@@ -4,78 +4,219 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-/*laptop display media query*/
-/* @media (min-width: 620px) and (max-width:1024px) { */
+
+
 @media (min-width: 620px) {
 
-.navbar {
-  font-size: 30px;
+.child{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+
+  .mobile-nav{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  /* .nav-container {
+    display: none;
+    
+  } */
+
 header {
   display: flex;
+  flex-direction: row;
   height: 100%;
   padding: 0px 0px;
   background-size: contain; 
   background-repeat: no-repeat;
   background-position: left;
+  width: 100%;
+  height: auto;
 }
-h1 {
-  font-size: 120px;
+h1,h2,h3 {
+  display: flex;
+  flex-direction: row;
+  font-size: 60px;
   text-align: center;
-  color:black;
+  color:white;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: auto;
 }
 main {
-  font-size: 30px
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  height: auto; 
+}
+
+p{
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  display:flex;
+  flex-direction:row;
+  width: 100%;
+  height:auto;
 }
 
 }
 
 @media (min-width: 1024px) {
 
-
-  }
-  .navbar {
+  .mobile-nav{
     display: inline-flex;
+    flex-direction: row;
     justify-content: space-between;
     font-size: 35px;
-    text-align: right;
-  }
-  header {
-   display:flex 
-  }
-  h1{
     text-align: center;
-    font-size: 20px;
-    color: white; 
   }
-  #LisaSchoolingwhite {
-    color: white
-  } 
+  .nav-container #navigation {
+    display:block;
+  }
+  .nav-container{
+    display: none;
+  }
+
+  .child{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    text-align: left;
+    align-items: center;
+    flex-flow: column wrap;
+    align-content: flex-end;
+  }
+
+ 
+  
+  header {
+   display:flex; 
+   flex-direction:column;
+  }
+  h1,h2,h3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    color: white; 
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    align-content: flex-end;
+  }
+
+  
 #toggle {
   display:none; 
 }
 
 
   main {
-    text-align: center;
-    font-size: 15px;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: small;
     padding-top: 35px;
     padding-left: 35px;
     padding-right: 35px;
-    height: 200px;
+    height: 50px;
+    flex-wrap: wrap;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    flex-flow: column wrap;
+    align-content: flex-end;
+    flex: 1 0 0;
+    height: auto;
+    width: 100%
+
   }
 
- 
+  p{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    flex: 2 0 0;
+  }
+
+  #Lisa_Schooling 
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    text-align: right;
+  }
+
+}
   section {
+    display:flex;
     flex-direction:column;
     width:50%;
     font-size: 1.8em;
   }
   .img {
     width: 48%;
-  }
+  }  
+/*navigation bar */
+ nav {
+  font-size: small; 
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+} 
+.mobile-nav{
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+  
+}
+#navigation {
+  display: none;
+  
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+a{
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  height: auto;
+}
+
+/*navigation words*/
+
+
+/* .parent{
+  background-color: thistle;
+  display: flex;
+  gap:20;
+} */
+
 
 /* top of page */ 
 header {
@@ -86,71 +227,61 @@ header {
   height: 100%;
   padding: 60px 0px;
   background-size: contain; 
-  background-repeat: no-repeat;
-  background-position: left;
+  background-repeat: repeat;
+  background-position: stretch;
   background-color: rgba(0, 0.338, 0, 0);
+  width:-webkit-fill-available;
 }
-
-
-
-/*navigation bar */
-nav {
-  font-size: small; 
-  text-align: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-.mobile-nav{
-  display: flex;
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  width: 100%;
-  background-color: white;
-  justify-content: space-between;
-}
-.nav-containor {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-/*navigation words*/
-
-a {
-  color: grey;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  text-decoration: none;
-  height: auto;
-}
-
 /*Lisa Schooling*/
 h1 {
   font-size: 60px;
   text-align: center;
-  color: black;
+  color:white ;
   font-family: Arial, Helvetica, sans-serif;
 }
+h2{
+  font-size: 40px;
+  text-align: center;
+  color:rgba(0, 0, 0, 0.728);
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+
 
 /*about section*/
 main {
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   background: grey;
   padding: 20px;
   text-align: center;
   padding-top: 50px;
-  height: 700px; 
+  width:-webkit-fill-available;
 }
 
 /*about words*/
-h2 {
-
-  font-size: 30;
+h3 {
+  display: flex;
+  flex-direction: row;
+  font-size: 50;
   color: rgb(198, 198, 198);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.child{
+  display: flex;
+  flex-direction: row;
+} 
+p{
+  display: flex;
+  flex-direction: row;
+  font-size: 30;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-style:solid;
+  border-width: 5px;
 }
 
 /*contact*/
@@ -169,7 +300,7 @@ section {
 
 
 /*Click here to Fill Out Order Form*/
-h3{
+h4{
   font-size: 30;
   color: black;
   font-family: Arial, Helvetica, sans-serif;

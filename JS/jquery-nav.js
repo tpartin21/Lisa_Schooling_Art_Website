@@ -3,9 +3,14 @@ $(document).ready(function(){
     $('.burgermenu').on('click', function(){
         console.log("clicked");
         $('.mobile-nav').toggle();
-    })
-});
-
+    })});
+  // $(document).ready(function resetMenu(){
+  //   if(window.innerWidth >= 1024) {
+  //     document.getElementById('nav-container').style.display = 'flex';
+  //   } else if (window.innerWidth < 1024) {
+  //     document.getElementById('nav-container').style.display = 'none';
+  //   }
+  // });
 /* smooth scroll */
 const links = document.querySelectorAll(".mobile-nav a");
  
