@@ -1,53 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 /*laptop display media query*/
-@media (min-width: 768px) and (max-width:1024px) {
-  body {
-    /* display: grid; */
-    grid-template-columns: 2fr 2fr 2fr 400px;
-    grid-template-rows: 200px 800px 200px;
-    column-gap: 20px;
-    padding: 0 20px;
-   
-  }
-  
-
-  .wrapper {
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: 
-    "header header"
-    "content content"
-    "contact powerpoint"
-    "footer footer"
-  }
-  nav ul {
-    display: flex ;
-    justify-content: space-between;
-  }
+@media (min-width: 620px) and (max-width:1024px) {
+.navbar {
+  font-size: 30px;
+}
+header {
+  display: flex;
+  height: 100%;
+  padding: 0px 0px;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: left;
+}
+h1 {
+  font-size: 120px;
+  text-align: center;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  font-size: 30px
+}
 
 }
-/* mobile phone display media query */ 
-@media (min-width: 320px) and (max-width: 480px) {
 
-  body {
-    /* display: grid; */
-    grid-template-columns: 1fr 1fr 1fr 200px;
-    grid-template-rows: 100px 400px 100px;
-    column-gap: 20px;
-    padding: 0 20px;
-   
+@media (max-width: 1024px) {
+
+
   }
-  nav {
-    display: flex
+  .navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 35px;
+    text-align: right;
   }
   header {
-    /* display: grid; */
-    padding: grid; 
-    text-align: center;
-    font-size: small;
+   display:flex 
   }
   h1{
     text-align: center;
     font-size: 20px;
+    color: white; 
   }
+  #LisaSchoolingwhite {
+    color: white
+  } 
+#toggle {
+  display:none; 
+}
+
 
   main {
     text-align: center;
@@ -56,36 +62,34 @@
     padding-left: 35px;
     padding-right: 35px;
     height: 200px;
-
+    flex-direction: column;
   }
-}
 
-.wrapper {
-  /* display: grid; */
-  gap: 20px;
-  grid-template-areas:
-    "header"
-    "content"
-    "contact"
-    "powerpoint"
-    "footer"
+ 
+  section {
+    flex-direction:column;
+    width:50%;
+    font-size: 1.8em;
+  }
+  .img {
+    width: 48%;
+  }
 
-}
 /* top of page */ 
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url(../images/lotus_bridge_c2.jpg);
   height: 100%;
   padding: 60px 0px;
   background-size: contain; 
   background-repeat: no-repeat;
   background-position: left;
-  grid-column: 1 / -1;
   background-color: rgba(0, 0.338, 0, 0);
 }
 
-.main-head {
-  grid-area: header;
-}
+
 
 /*navigation bar */
 nav {
@@ -122,22 +126,23 @@ a {
 /*Lisa Schooling*/
 h1 {
   font-size: 60px;
-  color:white;
   text-align: center;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /*about section*/
 main {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   background: grey;
-  padding: 0%;
+  padding: 20px;
   text-align: center;
   padding-top: 50px;
-  height: 700px;
+  height: 700px; 
 }
-.content {
-  grid-area: content;
-}
+
 /*about words*/
 h2 {
 
@@ -148,15 +153,18 @@ h2 {
 
 /*contact*/
 section {
+  display: flex;
   padding-top: 5px;
   height: 100%;
   width: 100%;
   text-align: center;
-} 
+  flex-direction: column;
+  align-items: center;
+  border:lightblue;
+  border-style: solid;
 
-.side {
-  grid-area: contact; 
 }
+
 
 /*Click here to Fill Out Order Form*/
 h3{
@@ -190,9 +198,7 @@ h3{
   gap: 10px;
 }
 
-.google-slides-container {
-  grid-area: powerpoint; 
-}
+
 /*footer words*/
 p {
   padding-bottom: 0%;
@@ -202,7 +208,9 @@ p {
 }
 
 footer {
-  grid-column: 1 / -1;
+  display: flex;
+  align-content: center;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.728);
   padding-top: 50px;
   padding-bottom: 50px;
@@ -214,6 +222,3 @@ footer p {
   color: rgb(198, 198, 198);
 }
 
-.main-footer{
-  grid-area: footer; 
-}

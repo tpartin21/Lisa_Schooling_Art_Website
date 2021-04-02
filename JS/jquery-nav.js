@@ -101,6 +101,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
      alert (`${usr.firstName} Thanks for registering.`)
 } else {
-  alert("There was an error")
+  alert("Thank you")
 } 
  }
