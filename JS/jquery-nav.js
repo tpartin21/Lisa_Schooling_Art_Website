@@ -25,9 +25,6 @@ function clickHandler(e) {
 }
 
 /*contact form */
-
-if(navigator.userAgent.toLowerCase().indexOf('android') > -1)
-        document.getElementById('metaViewport').setAttribute('content', 'width='+screen.width+', initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
 var fields = {} 
 document.addEventListener("DOMContentLoaded", function() {
   fields.firstName = document.getElementById('firstName');
@@ -35,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
   fields.email = document.getElementById('email');
   fields.address = document.getElementById('address');
   fields.houseNumber = document.getElementById('houseNumber');
-  fields.country = document.getElementById('country');
   fields.password = document.getElementById('password');
   fields.passwordCheck = document.getElementById('passwordCheck');
   fields.newsletter = document.getElementById('newsletter');
@@ -73,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
   valid &= fieldValidation(fields.firstName, isNotEmpty);
   valid &= fieldValidation(fields.lastName, isNotEmpty);
-  valid &= fieldValidation(fields.gender, isNotEmpty);
   valid &= fieldValidation(fields.address, isNotEmpty);
   valid &= fieldValidation(fields.country, isNotEmpty);
   valid &= fieldValidation(fields.email, isEmail);
@@ -83,10 +78,9 @@ document.addEventListener("DOMContentLoaded", function() {
   return valid;
  }
  class User {
-  constructor(firstName, lastName, gender, address, country, email, newsletter, question) {
+  constructor(firstName, lastName, address, country, email, newsletter, question) {
   this.firstName = firstName;
   this.lastName = lastName;
-  this.gender = gender;
   this.address = address;
   this.country = country;
   this.email = email;
