@@ -253,7 +253,7 @@ h2{
 /*about section*/
 main {
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   background: grey;
   padding: 20px;
